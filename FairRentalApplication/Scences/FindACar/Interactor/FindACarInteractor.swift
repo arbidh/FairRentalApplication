@@ -8,24 +8,22 @@
 
 import Foundation
 
-// MARK: - ArtistInteractorInput
+// MARK: - FindACarInteractorInput
 
-/// _ArtistInteractorInput_ is a protocol for interactor input behaviours
+/// _FindACarInteractorInput_ is a protocol for interactor input behaviours
 protocol FindACarInteractorInput{
-   // func findACar(request:FindACarRequest)
      func fetchItems(request: FindACarRequest)
 }
 
-// MARK: - ArtistInteractorOutput
+// MARK: - FindACarInteratorOutput
 
-/// _ArtistInteractorOutput_ is a protocol for interactor output behaviours
+/// _FindACarInteractorOutput_ is a protocol for interactor output behaviours
 protocol FindACarInteractorOutput{
-   // func showRespones(response:FindACarResponse)
     func presentfetchedResults(response: FindACarResponse)
     
     /// Tells the output to present albums
     ///
-    /// - parameter albums: The list of albums to present
+    /// - parameter cars: The list of cars
     func presentCars(albums: [Cars])
     
     /// Tells the output to present an error
@@ -65,11 +63,5 @@ class FindACarInteractor:FindACarInteractorInput{
             }
         }
     }
-    
-    
- 
-    // MARK: Business Logic
-    
-   
     
 }

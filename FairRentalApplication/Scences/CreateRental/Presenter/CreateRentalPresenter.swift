@@ -50,7 +50,7 @@ protocol CreateRentalPresenterOutput:class{
 
 // MARK: - CreatRentalPresenter
 
-/// _CreateRentalPresenter_ is a class responsible for presenting artist logic
+/// _CreateRentalPresenter_ is a class responsible for presenting car rental logic
 class CreateRentalPresenter:CreateRentalPresenterInput{
     
      private(set) weak var output: CreateRentalPresenterOutput?

@@ -25,12 +25,12 @@ protocol CreateRentalViewControllerOutput{
     
     /// Tells the output (interactor) to fetch cars for rentals
     ///
-    /// - parameter artistId: The artist identifier
+    /// - parameter request: The car request
     func fetchItems(request: FindACarRequest)
     
     /// Tells the output (interactor) to get the location info from google autocomplete
     ///
-    /// - parameter artistId: The artist identifier
+    /// - parameter none
     func showgooglePredictions()
 }
 

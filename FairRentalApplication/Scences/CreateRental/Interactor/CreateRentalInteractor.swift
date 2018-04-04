@@ -16,7 +16,7 @@ protocol CreateRentalInteractorInput:CreateRentalViewControllerOutput{
     // func findACar(request:FindACarRequest)
     func fetchItems(request: FindACarRequest)
 }
-/// _ArtistInteractorOutput_ is a protocol for interactor output behaviours
+/// _CarRentalInteractorOutput_ is a protocol for interactor output behaviours
 protocol CreateRentalInteractorOutput{
     // func showRespones(response:FindACarResponse)
     func presentfetchedResults(response: FindACarResponse)
@@ -31,8 +31,11 @@ protocol CreateRentalInteractorOutput{
 //Contains the Business Logic
 // MARK: - CreatRentalInteractor
 
-/// _CreateRentalInteractor_ is an interactor responsible for artist details business logic
+/// _CreateRentalInteractor_ is an interactor responsible for Car Rental details business logic
 class CreateRentalInteractor:CreateRentalInteractorInput{
+    func fetchItems(request: FindACarRequest) {
+        
+    }
     
     //displays google predictions
     //
@@ -57,33 +60,6 @@ class CreateRentalInteractor:CreateRentalInteractorInput{
     init(output: CreateRentalInteractorOutput, worker: FindACarWorker = FindACarWorker()) {
         self.output = output
         self.worker = worker
-    }
-    
-    
-    // MARK: - Business logic
-    
-    /// Fetches a list of Cars for Rent
-    ///
-    /// - parameter findACarRequest : Model for Car request data
-    func fetchItems(request: FindACarRequest) {
-        worker = FindACarWorker()
-        var request = FindACarRequest()
-        request.latitude = locationManager?.latitude
-        request.longitude = locationManager?.longitude
-        request.radius = 42
-        request.drop_off = "2018-06-08"
-        request.pick_up = "2018-06-07"
-        worker.fetch(RequestData: request, success:
-            { response, apiResponse in
-                if let fetchResponse = response{
-                    self.output.presentfetchedResults(response: fetchResponse)
-                    
-                }
-        }) { (response, apiResponse) in
-            if let fetchResponse = response{
-                self.output.presentfetchedResults(response: fetchResponse)
-            }
-        }
     }
    
 }

@@ -38,11 +38,11 @@ class FindACarRouter{
     
 }
 
-// MARK: - ArtistsRouterProtocol
+// MARK: - FindACarRouterProtocol
 
 extension FindACarRouter: FindACarRouterInput {
     
-    /// Handles the navigation when selecting an artist in the list to artist detail
+    /// Handles the navigation when selecting an artist in the list to car Rental detail
     ///
     /// - parameter indexPath: The selected index path
     func navigateToFindACarVC() {

@@ -58,7 +58,6 @@ extension CreateRentalViewController: GMSAutocompleteViewControllerDelegate {
                     let place = likelihood.place
                     print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
                     print("Current Place address \(place.formattedAddress)")
-            
                     print("Current PlaceID \(place.placeID)")
                 }
             }

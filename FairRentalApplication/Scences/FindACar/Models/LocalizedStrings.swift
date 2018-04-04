@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//localized string for Errors
 struct LocalizedStrings {
         
     struct Error {

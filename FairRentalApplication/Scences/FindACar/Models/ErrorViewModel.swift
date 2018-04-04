@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 /// _ErrorViewModel_ is a view model containing info related to displaying an error
 struct ErrorViewModel {
     let title: String?

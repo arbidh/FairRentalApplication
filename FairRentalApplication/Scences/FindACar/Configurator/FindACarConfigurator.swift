@@ -10,15 +10,18 @@ import Foundation
 import UIKit
 
 // MARK: Connect View, Interactor, and Presenter
-
-
-
 extension FindACarViewController:FindACarPresenterOutput{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         router.passDataToNextScene(segue: segue)
     }
 }
+
+///extension for _FindACarInteractor_
 extension FindACarInteractor: FindACarViewControllerOutput{
+   
+    
+    /// location info
+    /// type: Double
     var locationInfo: [Double] {
         get {
             return [0.0,0.0]
@@ -27,11 +30,11 @@ extension FindACarInteractor: FindACarViewControllerOutput{
             
             if let latitutde = locationManager?.latitude, let longitude =
                 locationManager?.longitude{
-                locationInfo = [latitutde,longitude]
+                self.locationInfo = [latitutde,longitude]
             }
         }
     }
-    
+    //TODO: Sort cars
     func sortCarsBy(sortingType: SortingType) {
         
     }

@@ -12,6 +12,12 @@ import Foundation
 let apiHandler = APIHandler()
 
 
+// MARK: - Business Logic
+
+/// Fetches Car Rentals from a API
+///
+/// - parameter requestData:   The request model for FindACarRequest
+/// - parameter completion: The completion block for responseHandler
 class FindACarWorker{
     // MARK: Biz Logic
     func fetch(RequestData:FindACarRequest , success:@escaping(responseHandler), fail:@escaping(responseHandler)){

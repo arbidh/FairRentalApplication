@@ -8,30 +8,8 @@
 
 import Foundation
 
-
-
+//TODO: add logic
 class CreateRentalWorker{
-    // MARK: - Business Logic
     
-    /// Fetches Car Rentals from a API
-    ///
-    /// - parameter requestData:   The request model for FindACarRequest
-    /// - parameter completion: The completion block for responseHandler
-    func fetch(RequestData:FindACarRequest , success:@escaping(responseHandler), fail:@escaping(responseHandler)){
-        
-        var request = FindACarRequest()
-        request.latitude = 35.1504
-        request.longitude = -114.57632
-        request.radius = 42
-        request.drop_off = "2018-06-08"
-        request.pick_up = "2018-06-07"
-        apiHandler.createARequestWithURL(requestData: request,
-                                         success: { (response,apiResponse) in
-                                            success(response,apiResponse)
-                                            
-        }) {(errorReponse,apiResponse) in
-            fail(nil,apiResponse)
-        }
-    }
     
 }

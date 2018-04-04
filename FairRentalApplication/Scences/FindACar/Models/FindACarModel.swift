@@ -11,7 +11,6 @@ import Foundation
 // MARK: - MODEL
 /// This class is the model for Request and Response
 ///
-
 struct FindACarRequest: Codable{
     init() {
     }
