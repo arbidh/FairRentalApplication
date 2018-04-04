@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C78DAA9206DBB9F0028165E /* CreateRentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAA8206DBB9F0028165E /* CreateRentalViewController.swift */; };
+		1C78DAAB206DBBD70028165E /* CreateRentalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAAA206DBBD70028165E /* CreateRentalPresenter.swift */; };
+		1C78DAAD206DBBF30028165E /* CreateRentalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAAC206DBBF30028165E /* CreateRentalInteractor.swift */; };
+		1C78DAB0206EB8E80028165E /* CreateRentalConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAAF206EB8E80028165E /* CreateRentalConfigurator.swift */; };
+		1C78DAB2206EB9270028165E /* CreateRentalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAB1206EB9270028165E /* CreateRentalRouter.swift */; };
+		1C78DAB4206EB9B70028165E /* CreateRentalCarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78DAB3206EB9B60028165E /* CreateRentalCarWorker.swift */; };
+		1C8A496320741C12000D8D0A /* FindACarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8A496220741C12000D8D0A /* FindACarTableViewCell.xib */; };
+		1C8A496520744004000D8D0A /* FindACarStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8A496420744004000D8D0A /* FindACarStoryBoard.storyboard */; };
+		1C8A49792074F392000D8D0A /* FindACarErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A49782074F392000D8D0A /* FindACarErrorPresenter.swift */; };
+		1C8A497B2074F403000D8D0A /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A497A2074F403000D8D0A /* ErrorViewModel.swift */; };
+		1C8A497D2074F5D2000D8D0A /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A497C2074F5D2000D8D0A /* LocalizedStrings.swift */; };
+		1C8A497F2074FB1E000D8D0A /* GooglePlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A497E2074FB1E000D8D0A /* GooglePlacesPresenter.swift */; };
+		1CAACF082062BAB0000E55FC /* RentalApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAACF072062BAB0000E55FC /* RentalApplicationViewModel.swift */; };
+		1CD3200720688E46001F0EA7 /* FindACarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3200620688E46001F0EA7 /* FindACarViewController.swift */; };
+		1CD3200920688E65001F0EA7 /* FindACarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3200820688E65001F0EA7 /* FindACarPresenter.swift */; };
+		1CD3200B20688E7C001F0EA7 /* FindACarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3200A20688E7C001F0EA7 /* FindACarInteractor.swift */; };
+		1CD3200D20688E8C001F0EA7 /* FindACarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3200C20688E8C001F0EA7 /* FindACarRouter.swift */; };
+		1CD3201020688EFA001F0EA7 /* FindACarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3200F20688EFA001F0EA7 /* FindACarWorker.swift */; };
+		1CD3201220688F0A001F0EA7 /* FindACarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3201120688F0A001F0EA7 /* FindACarConfigurator.swift */; };
+		1CD3201420688F48001F0EA7 /* FindACarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3201320688F48001F0EA7 /* FindACarModel.swift */; };
+		1CD3201A2068A266001F0EA7 /* FindACarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD320192068A266001F0EA7 /* FindACarTableViewCell.swift */; };
+		1CD3201C2068BBF2001F0EA7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3201B2068BBF2001F0EA7 /* LocationManager.swift */; };
+		1CD3201E20693B73001F0EA7 /* CreateRental.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3201D20693B73001F0EA7 /* CreateRental.storyboard */; };
+		1CE46088205582CB000E0AC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE46087205582CB000E0AC2 /* AppDelegate.swift */; };
+		1CE4608A205582CB000E0AC2 /* RentalApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE46089205582CB000E0AC2 /* RentalApplicationViewController.swift */; };
+		1CE4608F205582CB000E0AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE4608E205582CB000E0AC2 /* Assets.xcassets */; };
+		1CE46092205582CB000E0AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE46090205582CB000E0AC2 /* LaunchScreen.storyboard */; };
+		1CE4609D205582CB000E0AC2 /* FairRentalApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE4609C205582CB000E0AC2 /* FairRentalApplicationTests.swift */; };
+		1CE460A8205582CB000E0AC2 /* FairRentalApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE460A7205582CB000E0AC2 /* FairRentalApplicationUITests.swift */; };
+		1CE460B620558908000E0AC2 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE460B520558908000E0AC2 /* APIHandler.swift */; };
+		42FDFE3F7487E3F3DB96F312 /* Pods_FairRentalApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4076E62907499B0B8E83CE /* Pods_FairRentalApplicationUITests.framework */; };
+		A03002BCBDF2BA7854801580 /* Pods_FairRentalApplication_FairRentalApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8E249BE39945DDCAC269E8 /* Pods_FairRentalApplication_FairRentalApplicationTests.framework */; };
+		CE419F6EC5D5516A968F94C9 /* Pods_FairRentalApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3586266334F00127DABDCD66 /* Pods_FairRentalApplication.framework */; };
+		FBEC36054E07AE2CDE730C58 /* Pods_FairRentalApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8DE579543F0AC90D20A246 /* Pods_FairRentalApplicationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE46099205582CB000E0AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE4607C205582CB000E0AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE46083205582CB000E0AC2;
+			remoteInfo = FairRentalApplication;
+		};
+		1CE460A4205582CB000E0AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE4607C205582CB000E0AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE46083205582CB000E0AC2;
+			remoteInfo = FairRentalApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14218904FC61E7433359D9C4 /* Pods-FairRentalApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplicationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplicationUITests/Pods-FairRentalApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C78DAA8206DBB9F0028165E /* CreateRentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalViewController.swift; sourceTree = "<group>"; };
+		1C78DAAA206DBBD70028165E /* CreateRentalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalPresenter.swift; sourceTree = "<group>"; };
+		1C78DAAC206DBBF30028165E /* CreateRentalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalInteractor.swift; sourceTree = "<group>"; };
+		1C78DAAF206EB8E80028165E /* CreateRentalConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalConfigurator.swift; sourceTree = "<group>"; };
+		1C78DAB1206EB9270028165E /* CreateRentalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalRouter.swift; sourceTree = "<group>"; };
+		1C78DAB3206EB9B60028165E /* CreateRentalCarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRentalCarWorker.swift; sourceTree = "<group>"; };
+		1C8A496220741C12000D8D0A /* FindACarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindACarTableViewCell.xib; sourceTree = "<group>"; };
+		1C8A496420744004000D8D0A /* FindACarStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindACarStoryBoard.storyboard; sourceTree = "<group>"; };
+		1C8A49782074F392000D8D0A /* FindACarErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarErrorPresenter.swift; sourceTree = "<group>"; };
+		1C8A497A2074F403000D8D0A /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
+		1C8A497C2074F5D2000D8D0A /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		1C8A497E2074FB1E000D8D0A /* GooglePlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesPresenter.swift; sourceTree = "<group>"; };
+		1CAACF072062BAB0000E55FC /* RentalApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalApplicationViewModel.swift; sourceTree = "<group>"; };
+		1CD3200620688E46001F0EA7 /* FindACarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarViewController.swift; sourceTree = "<group>"; };
+		1CD3200820688E65001F0EA7 /* FindACarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarPresenter.swift; sourceTree = "<group>"; };
+		1CD3200A20688E7C001F0EA7 /* FindACarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarInteractor.swift; sourceTree = "<group>"; };
+		1CD3200C20688E8C001F0EA7 /* FindACarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarRouter.swift; sourceTree = "<group>"; };
+		1CD3200F20688EFA001F0EA7 /* FindACarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarWorker.swift; sourceTree = "<group>"; };
+		1CD3201120688F0A001F0EA7 /* FindACarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarConfigurator.swift; sourceTree = "<group>"; };
+		1CD3201320688F48001F0EA7 /* FindACarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarModel.swift; sourceTree = "<group>"; };
+		1CD320192068A266001F0EA7 /* FindACarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindACarTableViewCell.swift; sourceTree = "<group>"; };
+		1CD3201B2068BBF2001F0EA7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1CD3201D20693B73001F0EA7 /* CreateRental.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateRental.storyboard; sourceTree = "<group>"; };
+		1CE46084205582CB000E0AC2 /* FairRentalApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairRentalApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE46087205582CB000E0AC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CE46089205582CB000E0AC2 /* RentalApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalApplicationViewController.swift; sourceTree = "<group>"; };
+		1CE4608E205582CB000E0AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE46091205582CB000E0AC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CE46093205582CB000E0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE46098205582CB000E0AC2 /* FairRentalApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FairRentalApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE4609C205582CB000E0AC2 /* FairRentalApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairRentalApplicationTests.swift; sourceTree = "<group>"; };
+		1CE4609E205582CB000E0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE460A3205582CB000E0AC2 /* FairRentalApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FairRentalApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE460A7205582CB000E0AC2 /* FairRentalApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairRentalApplicationUITests.swift; sourceTree = "<group>"; };
+		1CE460A9205582CB000E0AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE460B520558908000E0AC2 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		25465915A1823BEDA97C085D /* Pods-FairRentalApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplicationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplicationUITests/Pods-FairRentalApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3586266334F00127DABDCD66 /* Pods_FairRentalApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FairRentalApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFDA6866DF25E78BF089291 /* Pods-FairRentalApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		5E4076E62907499B0B8E83CE /* Pods_FairRentalApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FairRentalApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8DE579543F0AC90D20A246 /* Pods_FairRentalApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FairRentalApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8E249BE39945DDCAC269E8 /* Pods_FairRentalApplication_FairRentalApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FairRentalApplication_FairRentalApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1D9EE7E0F0EF59F75BCC32 /* Pods-FairRentalApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication.release.xcconfig"; sourceTree = "<group>"; };
+		819452715FF8CA734D8F78B5 /* Pods-FairRentalApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplicationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplicationTests/Pods-FairRentalApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		84A0F26371EE7B1D85BBAB15 /* Pods-FairRentalApplication-FairRentalApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplication-FairRentalApplicationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplication-FairRentalApplicationTests/Pods-FairRentalApplication-FairRentalApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+		8EA4357A5F67606F58F3980F /* Pods-FairRentalApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplicationTests/Pods-FairRentalApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A92A7718C3172313576E00B8 /* Pods-FairRentalApplication-FairRentalApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FairRentalApplication-FairRentalApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FairRentalApplication-FairRentalApplicationTests/Pods-FairRentalApplication-FairRentalApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE46081205582CB000E0AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE419F6EC5D5516A968F94C9 /* Pods_FairRentalApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE46095205582CB000E0AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEC36054E07AE2CDE730C58 /* Pods_FairRentalApplicationTests.framework in Frameworks */,
+				A03002BCBDF2BA7854801580 /* Pods_FairRentalApplication_FairRentalApplicationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE460A0205582CB000E0AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FDFE3F7487E3F3DB96F312 /* Pods_FairRentalApplicationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0595E9DDF5F7D36FBBF5BA74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFDA6866DF25E78BF089291 /* Pods-FairRentalApplication.debug.xcconfig */,
+				7C1D9EE7E0F0EF59F75BCC32 /* Pods-FairRentalApplication.release.xcconfig */,
+				8EA4357A5F67606F58F3980F /* Pods-FairRentalApplicationTests.debug.xcconfig */,
+				819452715FF8CA734D8F78B5 /* Pods-FairRentalApplicationTests.release.xcconfig */,
+				25465915A1823BEDA97C085D /* Pods-FairRentalApplicationUITests.debug.xcconfig */,
+				14218904FC61E7433359D9C4 /* Pods-FairRentalApplicationUITests.release.xcconfig */,
+				A92A7718C3172313576E00B8 /* Pods-FairRentalApplication-FairRentalApplicationTests.debug.xcconfig */,
+				84A0F26371EE7B1D85BBAB15 /* Pods-FairRentalApplication-FairRentalApplicationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C8A49662074406F000D8D0A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1C8A496220741C12000D8D0A /* FindACarTableViewCell.xib */,
+				1C8A496420744004000D8D0A /* FindACarStoryBoard.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1C8A496720744084000D8D0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CD320192068A266001F0EA7 /* FindACarTableViewCell.swift */,
+				1CD3200620688E46001F0EA7 /* FindACarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1C8A496820744098000D8D0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3200C20688E8C001F0EA7 /* FindACarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1C8A4969207440A2000D8D0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3200820688E65001F0EA7 /* FindACarPresenter.swift */,
+				1C8A49782074F392000D8D0A /* FindACarErrorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1C8A496A207440AD000D8D0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3200A20688E7C001F0EA7 /* FindACarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1C8A496B207440BA000D8D0A /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3200F20688EFA001F0EA7 /* FindACarWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		1C8A496C207440C5000D8D0A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3201120688F0A001F0EA7 /* FindACarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1C8A496D207440F7000D8D0A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAAF206EB8E80028165E /* CreateRentalConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1C8A496E207440FE000D8D0A /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAB3206EB9B60028165E /* CreateRentalCarWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		1C8A49702074410D000D8D0A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAAC206DBBF30028165E /* CreateRentalInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1C8A497120744114000D8D0A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAAA206DBBD70028165E /* CreateRentalPresenter.swift */,
+				1C8A497E2074FB1E000D8D0A /* GooglePlacesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1C8A49722074411C000D8D0A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAB1206EB9270028165E /* CreateRentalRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1C8A497320744123000D8D0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C78DAA8206DBB9F0028165E /* CreateRentalViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1C8A497420744129000D8D0A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3201D20693B73001F0EA7 /* CreateRental.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1CD3200120688D6D001F0EA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1CE460B520558908000E0AC2 /* APIHandler.swift */,
+				1CD3201B2068BBF2001F0EA7 /* LocationManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1CD3200320688DE4001F0EA7 /* RentalDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RentalDetails;
+			sourceTree = "<group>";
+		};
+		1CD3200E20688ED9001F0EA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3201320688F48001F0EA7 /* FindACarModel.swift */,
+				1C8A497A2074F403000D8D0A /* ErrorViewModel.swift */,
+				1C8A497C2074F5D2000D8D0A /* LocalizedStrings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CD3201520688FF4001F0EA7 /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				1CD320182068901F001F0EA7 /* CreateRental */,
+				1CD3201720689016001F0EA7 /* FindACar */,
+				1CD3201620689006001F0EA7 /* RentACar */,
+			);
+			path = Scences;
+			sourceTree = "<group>";
+		};
+		1CD3201620689006001F0EA7 /* RentACar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RentACar;
+			sourceTree = "<group>";
+		};
+		1CD3201720689016001F0EA7 /* FindACar */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3200E20688ED9001F0EA7 /* Models */,
+				1C8A496C207440C5000D8D0A /* Configurator */,
+				1C8A496B207440BA000D8D0A /* Worker */,
+				1C8A496A207440AD000D8D0A /* Interactor */,
+				1C8A4969207440A2000D8D0A /* Presenter */,
+				1C8A496820744098000D8D0A /* Router */,
+				1C8A496720744084000D8D0A /* ViewControllers */,
+				1C8A49662074406F000D8D0A /* UI */,
+			);
+			path = FindACar;
+			sourceTree = "<group>";
+		};
+		1CD320182068901F001F0EA7 /* CreateRental */ = {
+			isa = PBXGroup;
+			children = (
+				1C8A497420744129000D8D0A /* UI */,
+				1C8A497320744123000D8D0A /* ViewControllers */,
+				1C8A49722074411C000D8D0A /* Router */,
+				1C8A497120744114000D8D0A /* Presenter */,
+				1C8A49702074410D000D8D0A /* Interactor */,
+				1C8A496E207440FE000D8D0A /* Worker */,
+				1C8A496D207440F7000D8D0A /* Configurator */,
+			);
+			path = CreateRental;
+			sourceTree = "<group>";
+		};
+		1CE4607B205582CB000E0AC2 = {
+			isa = PBXGroup;
+			children = (
+				1CE46086205582CB000E0AC2 /* FairRentalApplication */,
+				1CE4609B205582CB000E0AC2 /* FairRentalApplicationTests */,
+				1CE460A6205582CB000E0AC2 /* FairRentalApplicationUITests */,
+				1CE46085205582CB000E0AC2 /* Products */,
+				0595E9DDF5F7D36FBBF5BA74 /* Pods */,
+				9A07DC6B6EC768BC3BE63868 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE46085205582CB000E0AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE46084205582CB000E0AC2 /* FairRentalApplication.app */,
+				1CE46098205582CB000E0AC2 /* FairRentalApplicationTests.xctest */,
+				1CE460A3205582CB000E0AC2 /* FairRentalApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE46086205582CB000E0AC2 /* FairRentalApplication */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3201520688FF4001F0EA7 /* Scences */,
+				1CD3200320688DE4001F0EA7 /* RentalDetails */,
+				1CD3200120688D6D001F0EA7 /* Common */,
+				1CE46087205582CB000E0AC2 /* AppDelegate.swift */,
+				1CE46089205582CB000E0AC2 /* RentalApplicationViewController.swift */,
+				1CE4608E205582CB000E0AC2 /* Assets.xcassets */,
+				1CE46090205582CB000E0AC2 /* LaunchScreen.storyboard */,
+				1CE46093205582CB000E0AC2 /* Info.plist */,
+				1CAACF072062BAB0000E55FC /* RentalApplicationViewModel.swift */,
+			);
+			path = FairRentalApplication;
+			sourceTree = "<group>";
+		};
+		1CE4609B205582CB000E0AC2 /* FairRentalApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE4609C205582CB000E0AC2 /* FairRentalApplicationTests.swift */,
+				1CE4609E205582CB000E0AC2 /* Info.plist */,
+			);
+			path = FairRentalApplicationTests;
+			sourceTree = "<group>";
+		};
+		1CE460A6205582CB000E0AC2 /* FairRentalApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE460A7205582CB000E0AC2 /* FairRentalApplicationUITests.swift */,
+				1CE460A9205582CB000E0AC2 /* Info.plist */,
+			);
+			path = FairRentalApplicationUITests;
+			sourceTree = "<group>";
+		};
+		9A07DC6B6EC768BC3BE63868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3586266334F00127DABDCD66 /* Pods_FairRentalApplication.framework */,
+				5E8DE579543F0AC90D20A246 /* Pods_FairRentalApplicationTests.framework */,
+				5E4076E62907499B0B8E83CE /* Pods_FairRentalApplicationUITests.framework */,
+				6F8E249BE39945DDCAC269E8 /* Pods_FairRentalApplication_FairRentalApplicationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE46083205582CB000E0AC2 /* FairRentalApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE460AC205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplication" */;
+			buildPhases = (
+				80A1667928AF37068F9C4D2B /* [CP] Check Pods Manifest.lock */,
+				1CE46080205582CB000E0AC2 /* Sources */,
+				1CE46081205582CB000E0AC2 /* Frameworks */,
+				1CE46082205582CB000E0AC2 /* Resources */,
+				4564CCCD1E9D2CCAB797A8BB /* [CP] Embed Pods Frameworks */,
+				415C8827FA274D3F99EED5F8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FairRentalApplication;
+			productName = FairRentalApplication;
+			productReference = 1CE46084205582CB000E0AC2 /* FairRentalApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CE46097205582CB000E0AC2 /* FairRentalApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE460AF205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplicationTests" */;
+			buildPhases = (
+				3453C459C25BFE29D989B9BD /* [CP] Check Pods Manifest.lock */,
+				1CE46094205582CB000E0AC2 /* Sources */,
+				1CE46095205582CB000E0AC2 /* Frameworks */,
+				1CE46096205582CB000E0AC2 /* Resources */,
+				55E5163F698ED9CDFFA1F462 /* [CP] Embed Pods Frameworks */,
+				B5E2394BB0178F3DD878BF2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE4609A205582CB000E0AC2 /* PBXTargetDependency */,
+			);
+			name = FairRentalApplicationTests;
+			productName = FairRentalApplicationTests;
+			productReference = 1CE46098205582CB000E0AC2 /* FairRentalApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CE460A2205582CB000E0AC2 /* FairRentalApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE460B2205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplicationUITests" */;
+			buildPhases = (
+				5477E65A3A46E094287D6360 /* [CP] Check Pods Manifest.lock */,
+				1CE4609F205582CB000E0AC2 /* Sources */,
+				1CE460A0205582CB000E0AC2 /* Frameworks */,
+				1CE460A1205582CB000E0AC2 /* Resources */,
+				2078107792ECC069A4FFF667 /* [CP] Embed Pods Frameworks */,
+				E549E7C1155A2C05E3F131A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE460A5205582CB000E0AC2 /* PBXTargetDependency */,
+			);
+			name = FairRentalApplicationUITests;
+			productName = FairRentalApplicationUITests;
+			productReference = 1CE460A3205582CB000E0AC2 /* FairRentalApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE4607C205582CB000E0AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = org.fair;
+				TargetAttributes = {
+					1CE46083205582CB000E0AC2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1CE46097205582CB000E0AC2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CE46083205582CB000E0AC2;
+					};
+					1CE460A2205582CB000E0AC2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CE46083205582CB000E0AC2;
+					};
+				};
+			};
+			buildConfigurationList = 1CE4607F205582CB000E0AC2 /* Build configuration list for PBXProject "FairRentalApplication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE4607B205582CB000E0AC2;
+			productRefGroup = 1CE46085205582CB000E0AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE46083205582CB000E0AC2 /* FairRentalApplication */,
+				1CE46097205582CB000E0AC2 /* FairRentalApplicationTests */,
+				1CE460A2205582CB000E0AC2 /* FairRentalApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE46082205582CB000E0AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE46092205582CB000E0AC2 /* LaunchScreen.storyboard in Resources */,
+				1CE4608F205582CB000E0AC2 /* Assets.xcassets in Resources */,
+				1C8A496320741C12000D8D0A /* FindACarTableViewCell.xib in Resources */,
+				1CD3201E20693B73001F0EA7 /* CreateRental.storyboard in Resources */,
+				1C8A496520744004000D8D0A /* FindACarStoryBoard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE46096205582CB000E0AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE460A1205582CB000E0AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2078107792ECC069A4FFF667 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplicationUITests/Pods-FairRentalApplicationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3453C459C25BFE29D989B9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FairRentalApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		415C8827FA274D3F99EED5F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4564CCCD1E9D2CCAB797A8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplication/Pods-FairRentalApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5477E65A3A46E094287D6360 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FairRentalApplicationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55E5163F698ED9CDFFA1F462 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplicationTests/Pods-FairRentalApplicationTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplicationTests/Pods-FairRentalApplicationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A1667928AF37068F9C4D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FairRentalApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E2394BB0178F3DD878BF2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplicationTests/Pods-FairRentalApplicationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E549E7C1155A2C05E3F131A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FairRentalApplicationUITests/Pods-FairRentalApplicationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE46080205582CB000E0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C78DAAB206DBBD70028165E /* CreateRentalPresenter.swift in Sources */,
+				1CD3200720688E46001F0EA7 /* FindACarViewController.swift in Sources */,
+				1CE460B620558908000E0AC2 /* APIHandler.swift in Sources */,
+				1C8A497F2074FB1E000D8D0A /* GooglePlacesPresenter.swift in Sources */,
+				1CD3200920688E65001F0EA7 /* FindACarPresenter.swift in Sources */,
+				1CE4608A205582CB000E0AC2 /* RentalApplicationViewController.swift in Sources */,
+				1CAACF082062BAB0000E55FC /* RentalApplicationViewModel.swift in Sources */,
+				1CD3200D20688E8C001F0EA7 /* FindACarRouter.swift in Sources */,
+				1CD3201A2068A266001F0EA7 /* FindACarTableViewCell.swift in Sources */,
+				1CE46088205582CB000E0AC2 /* AppDelegate.swift in Sources */,
+				1C8A497B2074F403000D8D0A /* ErrorViewModel.swift in Sources */,
+				1C8A49792074F392000D8D0A /* FindACarErrorPresenter.swift in Sources */,
+				1C78DAB4206EB9B70028165E /* CreateRentalCarWorker.swift in Sources */,
+				1CD3201220688F0A001F0EA7 /* FindACarConfigurator.swift in Sources */,
+				1C78DAA9206DBB9F0028165E /* CreateRentalViewController.swift in Sources */,
+				1CD3200B20688E7C001F0EA7 /* FindACarInteractor.swift in Sources */,
+				1CD3201020688EFA001F0EA7 /* FindACarWorker.swift in Sources */,
+				1C78DAB0206EB8E80028165E /* CreateRentalConfigurator.swift in Sources */,
+				1C78DAAD206DBBF30028165E /* CreateRentalInteractor.swift in Sources */,
+				1CD3201420688F48001F0EA7 /* FindACarModel.swift in Sources */,
+				1CD3201C2068BBF2001F0EA7 /* LocationManager.swift in Sources */,
+				1C8A497D2074F5D2000D8D0A /* LocalizedStrings.swift in Sources */,
+				1C78DAB2206EB9270028165E /* CreateRentalRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE46094205582CB000E0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE4609D205582CB000E0AC2 /* FairRentalApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE4609F205582CB000E0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE460A8205582CB000E0AC2 /* FairRentalApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CE4609A205582CB000E0AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE46083205582CB000E0AC2 /* FairRentalApplication */;
+			targetProxy = 1CE46099205582CB000E0AC2 /* PBXContainerItemProxy */;
+		};
+		1CE460A5205582CB000E0AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE46083205582CB000E0AC2 /* FairRentalApplication */;
+			targetProxy = 1CE460A4205582CB000E0AC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CE46090205582CB000E0AC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE46091205582CB000E0AC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CE460AA205582CB000E0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CE460AB205582CB000E0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE460AD205582CB000E0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFDA6866DF25E78BF089291 /* Pods-FairRentalApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CE460AE205582CB000E0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1D9EE7E0F0EF59F75BCC32 /* Pods-FairRentalApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CE460B0205582CB000E0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA4357A5F67606F58F3980F /* Pods-FairRentalApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FairRentalApplication.app/FairRentalApplication";
+			};
+			name = Debug;
+		};
+		1CE460B1205582CB000E0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819452715FF8CA734D8F78B5 /* Pods-FairRentalApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FairRentalApplication.app/FairRentalApplication";
+			};
+			name = Release;
+		};
+		1CE460B3205582CB000E0AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25465915A1823BEDA97C085D /* Pods-FairRentalApplicationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FairRentalApplication;
+			};
+			name = Debug;
+		};
+		1CE460B4205582CB000E0AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14218904FC61E7433359D9C4 /* Pods-FairRentalApplicationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3AXEACKMV;
+				INFOPLIST_FILE = FairRentalApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arbi.FairRentalApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FairRentalApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE4607F205582CB000E0AC2 /* Build configuration list for PBXProject "FairRentalApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE460AA205582CB000E0AC2 /* Debug */,
+				1CE460AB205582CB000E0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE460AC205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE460AD205582CB000E0AC2 /* Debug */,
+				1CE460AE205582CB000E0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE460AF205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE460B0205582CB000E0AC2 /* Debug */,
+				1CE460B1205582CB000E0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE460B2205582CB000E0AC2 /* Build configuration list for PBXNativeTarget "FairRentalApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE460B3205582CB000E0AC2 /* Debug */,
+				1CE460B4205582CB000E0AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE4607C205582CB000E0AC2 /* Project object */;
+}
