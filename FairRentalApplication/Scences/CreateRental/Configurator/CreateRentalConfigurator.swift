@@ -25,11 +25,9 @@ final class CreateRentalConfigurator{
     func configure(viewController:CreateRentalViewController){
         let router = CreateRentalRouter(viewController: viewController)
 
-
         let locationManager = LocationManager()
         locationManager.manager?.requestWhenInUseAuthorization()
-        let presenter = CreateRentalPresenter(output: viewController)
-    
+        let presenter = CreateRentalPresenter(output: viewController)    
 
         let interactor = CreateRentalInteractor(output: presenter)
         interactor.output = presenter

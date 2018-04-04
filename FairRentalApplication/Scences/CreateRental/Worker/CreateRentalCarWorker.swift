@@ -11,7 +11,12 @@ import Foundation
 
 
 class CreateRentalWorker{
-    // MARK: Biz Logic
+    // MARK: - Business Logic
+    
+    /// Fetches Car Rentals from a API
+    ///
+    /// - parameter requestData:   The request model for FindACarRequest
+    /// - parameter completion: The completion block for responseHandler
     func fetch(RequestData:FindACarRequest , success:@escaping(responseHandler), fail:@escaping(responseHandler)){
         
         var request = FindACarRequest()

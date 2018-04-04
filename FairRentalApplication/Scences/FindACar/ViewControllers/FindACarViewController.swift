@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+//Sorting Type
+///TO DO: Sort
 enum SortingType{
     case ByCompany
     case ByDistance
@@ -15,6 +18,7 @@ enum SortingType{
     case Ascending
     case Descending
 }
+
 
 protocol FindACarViewControllerInput: FindACarPresenterOutput{
     func showAllCars(viewModel:FindACarViewModel)
@@ -57,14 +61,14 @@ class FindACarViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
         configureCell()
         var findCarRequest = FindACarRequest()
         findCarRequest.radius = 42
-        output.fetchItems(request: FindACarRequest())
+        output.fetchItems(request: findCarRequest)
     }
 
     func successFetchedItems(viewModel: FindACarViewModel) {
+        //TODO:  pass the data to the tableViewController
         print(viewModel.fetchedResultData)
         
     }
@@ -85,10 +89,6 @@ extension FindACarViewController:UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
-        
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
     }
     
@@ -115,7 +115,6 @@ extension FindACarViewController: FindACarViewControllerInput {
     func displayError(viewModel: ErrorViewModel) {
         
         self.refreshControl.endRefreshing()
-        //self.presentError(viewModel: viewModel)
     }
 }
 

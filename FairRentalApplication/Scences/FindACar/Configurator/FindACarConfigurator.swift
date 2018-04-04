@@ -11,8 +11,9 @@ import UIKit
 
 // MARK: Connect View, Interactor, and Presenter
 
-extension FindACarViewController:FindACarPresenterOutput{
 
+
+extension FindACarViewController:FindACarPresenterOutput{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         router.passDataToNextScene(segue: segue)
     }
@@ -31,12 +32,9 @@ extension FindACarInteractor: FindACarViewControllerOutput{
         }
     }
     
-  
-    
     func sortCarsBy(sortingType: SortingType) {
         
     }
-    
     
 }
 extension FindACarPresenter:FindACarInteractorOutput{
@@ -47,9 +45,14 @@ extension FindACarPresenter:FindACarInteractorOutput{
     func showRespones(response: FindACarResponse) {
         
     }
-    
-    
+
 }
+
+// MARK: - FindACarConfigurator
+
+/// Configures the VIP scene with pathways between router, view controller, interactor and presenter
+///
+/// - parameter viewController: The view controller
 
 final public class FindACarConfigurator{
     

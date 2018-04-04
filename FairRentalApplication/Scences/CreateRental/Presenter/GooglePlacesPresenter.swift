@@ -16,29 +16,36 @@ protocol GooglePresenterProtocol{
     /// Present addresses given from GooglePlaces
     ///
     /// - parameter none
-  func presentPredictions()
+    func presentPredictions()
     
 }
 
-/// Extension of _ErrorPresenter_ protocol for common view controller error handling
-extension GooglePresenterProtocol where Self: UIViewController{
+ /// Extension of _GooglePresenter protocol for handling callbacks from google place services.
+extension GooglePresenterProtocol where Self: CreateRentalViewController{
     
-    /// Presents an error for a view controller using an alert
+    /// Presents a google view controller listing Addresses
     ///
-    /// - parameter viewModel: The view model for the error
+    /// - parameter none
     func presentPredictions() {
-      //   let autocompleteController = GMSAutocompleteViewController()
-       // autocompleteController.delegate = self
-        //present(autocompleteController, animated: true, completion: nil)
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        present(autocompleteController, animated: true, completion: nil)
     }
     
 }
+
+/// Extension of _CreateRentalViewController_ for handling GMSAutoCompleteViewControllerDelegate
+
 extension CreateRentalViewController: GMSAutocompleteViewControllerDelegate {
     
     // Handle the user's selection.
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         
     }
+    
+    /// get Current location with Google places
+    ///
+    /// - parameter none
     @IBAction func getCurrentLocation(){
         var placesClient = GMSPlacesClient.shared()
         placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
@@ -51,18 +58,14 @@ extension CreateRentalViewController: GMSAutocompleteViewControllerDelegate {
                     let place = likelihood.place
                     print("Current Place name \(place.name) at likelihood \(likelihood.likelihood)")
                     print("Current Place address \(place.formattedAddress)")
-                    print("Current Place attributions \(place.attributions)")
+            
                     print("Current PlaceID \(place.placeID)")
                 }
             }
         })
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        startReservationtextField.delegate = self
-        
-    }
+  
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
         // TODO: handle the error.

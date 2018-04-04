@@ -11,27 +11,51 @@ import Mapbox
 import CoreLocation
 import GooglePlaces
 
+// MARK: - CreateRentalViewControlelrInput
 
+/// _CreateViewControllerInput_ is a protocol for view controller input behaviours
 protocol CreateRentalViewControllerInput:CreateRentalPresenterOutput{
     
 }
 
+// MARK: - CreateRentalViewControllerOutput
+
+/// _CreateViewControllerOutput is a protocol for view controller output behaviours
 protocol CreateRentalViewControllerOutput{
-    //func sortCarsBy(sortingType: SortingType)
+    
+    /// Tells the output (interactor) to fetch cars for rentals
+    ///
+    /// - parameter artistId: The artist identifier
     func fetchItems(request: FindACarRequest)
+    
+    /// Tells the output (interactor) to get the location info from google autocomplete
+    ///
+    /// - parameter artistId: The artist identifier
     func showgooglePredictions()
 }
 
-class CreateRentalViewController: UIViewController {
+
+// MARK: - CreateRentalViewController
+
+/// _CreateRentalViewController_ is a view controller responsible for displaying list of car rentals
+class CreateRentalViewController: UIViewController, GooglePresenterProtocol {
+    
     // Present the Autocomplete view controller when the button is pressed.
     @IBOutlet weak var startReservationtextField: UITextField!
     public var output: CreateRentalViewControllerOutput!
     public var router: CreateRentalRouter!
     
+    // MARK: - IBAction GoogleAutoComplete
     
+    /// Calls _autocompletClicked
+    ///
+    /// - parameter any:       Any
     @IBAction func autocompleteClicked(_ sender: Any) {
-      
          output.showgooglePredictions()
+    }
+    
+    override func viewDidLoad() {
+        startReservationtextField.delegate = self
     }
     
     override func awakeFromNib() {
@@ -44,7 +68,9 @@ class CreateRentalViewController: UIViewController {
     }
 }
         
+// MARK: - UITextFieldDelegate
 
+/// _CreateViewControllerOutput is a protocol for view controller output behaviours
 
 extension CreateRentalViewController: UITextFieldDelegate{
     
@@ -57,7 +83,11 @@ extension CreateRentalViewController: UITextFieldDelegate{
     }
     
 }
+// MARK: - CreateRentalPresenterOutput
+
 extension CreateRentalViewController: CreateRentalViewControllerInput{
+    
+    
     func successFetchedItems(viewModel: FindACarViewModel) {
         
     }
@@ -75,9 +105,8 @@ extension CreateRentalViewController: CreateRentalViewControllerInput{
     }
     
     func showgooglePredictions() {
-       
+       self.presentPredictions()
     }
-
 
 }
 

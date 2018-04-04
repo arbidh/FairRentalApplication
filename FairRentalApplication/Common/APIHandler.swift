@@ -21,11 +21,24 @@ enum FairRentalError: Error {
           
 let  apiKey = "e2MHOSyDV9TJWoDT4AFociAnIFvLAs4L"
 let  endpoint = "https://api.sandbox.amadeus.com/v1.2/cars/search-circle"
-          
+
+// MARK: - Repsonse Handler
+/// ResponseHandler for  APIResposne
+///
+/// - parameter response:   model for car Rentals FindACarResponse
+/// - parameter completion: The completion block for APIResponse
 typealias responseHandler = (_ response:FindACarResponse? , _ apiResponse:APIResponse) ->()
-          
+
+// MARK: - API Handler
+/// APIHandler to make API connections
+
 class APIHandler{
     
+    
+    /// Builds request Data
+    ///
+    /// - parameter response:   model for car Rentals FindACarRequest
+    /// - returns url : full url to send to api
     func buildRequestURL(requestData:FindACarRequest)->URL?{
         let requestURL = "?apikey=\(apiKey)&latitude=\(requestData.latitude ?? 0)&longitude=\(requestData.longitude ?? 0)&radius=\(requestData.radius ?? 0)&pick_up=\(requestData.pick_up ?? "")&drop_off=\(requestData.drop_off ?? "")"
         guard let fullURL =  URL(string: endpoint + requestURL) else{
@@ -74,28 +87,7 @@ class APIHandler{
                     apiRespone.message = String(response.statusCode)
                     fail(findACarModel,apiRespone)
                     }
-                }.resume()
-            }
+            }.resume()
         }
-    
-    
-    //enter your address
-    //or get location from map
-    
- 
-    
-    
-    //find the car based on address pickup
-//    Finding a car
-//    Based on an address, pickup date, and drop-off date return a list of rentals. This list should be sortable by company, distance, and price (ascending and descending order)
-//    Upon user selection provide rental details
-//    Directions to pickup the rental
-//    There should be a call to action showing user's the nearest pickup location and directions on how to get there.
-//    Make the app look as appealing as possible to use
-    
-    
-    
-    
-    
-    
+    }
 }
